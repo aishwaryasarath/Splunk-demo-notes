@@ -93,3 +93,8 @@ host="splunkmain"  state=* usr=* | stats count(usr) AS cuser BY state | sort -cu
 host="splunkmain" state=* level=critical | rare state by level
 ```
 <img width="691" alt="image" src="https://user-images.githubusercontent.com/49971693/167711203-c68957da-2155-42cc-b735-8ac1aadebf89.png">
+```
+host="splunkmain" state=* level=critical | top state by level
+```
+
+<img width="684" alt="image" src="https://user-images.githubusercontent.com/49971693/167711448-f20452fc-9c99-4db8-a8af-985b83cc2f49.png">

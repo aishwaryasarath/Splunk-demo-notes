@@ -84,3 +84,12 @@ Commands: top, rare, stats
 - stats <function(fields) by fields eg. stats avg(kbps) BY host 
 - stats count(failed_logins) BY user
 
+```
+host="splunkmain"  state=* usr=* | stats count(usr) AS cuser BY state | sort -cuser
+```
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/49971693/167710852-64bb37a4-0499-4b7d-b614-950258a04a19.png">
+
+```
+host="splunkmain" state=* level=critical | rare state by level
+```
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/49971693/167711203-c68957da-2155-42cc-b735-8ac1aadebf89.png">

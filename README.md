@@ -62,3 +62,11 @@ sudo ./splunk start --accept-license
  - **Search Terms | Commands**
  - host=myhost.lcc source=hstlogs user=* (message=fail* OR message=lock*) | table _time user message | sort -_time
  - the space in the search term is a boolean AND
+```
+host=splunkmain backupduration=* domain=* | table _time backupduration domain
+```
+ <img width="1395" alt="image" src="https://user-images.githubusercontent.com/49971693/167697784-9b782ef1-269c-4040-8ced-935d1c3eea84.png">
+
+```
+host="splunkmain" | eval new_time=strftime(_time, "%m-%d-%y  %I:%M%p") | table _time new_time
+```

@@ -70,3 +70,17 @@ host=splunkmain backupduration=* domain=* | table _time backupduration domain
 ```
 host="splunkmain" | eval new_time=strftime(_time, "%m-%d-%y  %I:%M%p") | table _time new_time
 ```
+- Extract field
+  - regex
+  - delimiter
+
+## Search Pilepine
+
+**Broadsearch Keywords/Booleans/fields | Commands | Table/Viz**
+
+Commands: top, rare, stats
+- top automatically builds a table with count & percent columns
+- rare is least common
+- stats <function(fields) by fields eg. stats avg(kbps) BY host 
+- stats count(failed_logins) BY user
+

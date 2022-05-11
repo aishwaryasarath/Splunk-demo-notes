@@ -116,3 +116,5 @@ host="splunkmain" state=* level=critical | top state by level
 Filter, split by row, split by column, Column value
 
 ## 5. Data Visualization
+
+to be continued

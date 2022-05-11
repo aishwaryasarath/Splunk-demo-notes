@@ -101,3 +101,18 @@ host="splunkmain" state=* level=critical | top state by level
 <img width="684" alt="image" src="https://user-images.githubusercontent.com/49971693/167711448-f20452fc-9c99-4db8-a8af-985b83cc2f49.png">
 
 ## 5. Data Visualization
+
+- Dimension - something you want to measure, each one is a grain. 
+- Dataset is a collection of data or knowledge objects(saved searches, field extractions, tags etc), is full of dimensions
+- Datamodels is a collection of datasets
+- Types of visualizatons: Pie chart, line chart, area chart, column chart(vertical), bar chart(horizontal), table chart, single value, gauge.
+
+## Reporting & alerting
+<img width="785" alt="image" src="https://user-images.githubusercontent.com/49971693/167715674-b0148f3d-8d1a-4aab-bff8-905d06522a28.png">
+<img width="686" alt="image" src="https://user-images.githubusercontent.com/49971693/167715728-aaf88c95-4095-4de1-8e3c-1fea18e283d7.png">
+<img width="463" alt="image" src="https://user-images.githubusercontent.com/49971693/167715750-0a268f31-95e1-479a-8ba8-2d73158a20f2.png">
+
+## Basic Pivot Functions
+Filter, split by row, split by column, Column value
+
+## 5. Data Visualization
